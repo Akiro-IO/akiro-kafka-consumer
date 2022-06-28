@@ -1,0 +1,10 @@
+{
+  "bootstrapservers": "localhost:9092",
+  "topic": "topic_queue",
+  "autoResetConfig": "latest",
+  "kerberosEnabled": false,
+  "saslMechanism": "GSSAPI",
+  "securityProtocol": "SASL_PLAINTEXT",
+  "kerberosServiceName": "kafka",
+  "jaasConfig": "com.sun.security.auth.module.Krb5LoginModule required \\\n      useKeyTab=true \\\n      storeKey=true \\\n      keyTab=\"/data/cdr/config-sync-service/ycdrssd.keytab\" \\\n      principal=\"ycdrssd@QUINTILES.NET"
+}
